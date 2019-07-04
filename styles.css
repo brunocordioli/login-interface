@@ -20,7 +20,6 @@ a:hover {
     color: blue;
 }
 li {
-    margin: .5px;
     padding: 1vw 3vw 1vw 3vw;
 }
 .wrapper {
@@ -43,7 +42,15 @@ button {
     border:1px solid #660000;
     border-radius:5px;
     color:#fff;
-    margin-right: 1vw;
     padding:10px 10px 10px 10px;
     text-decoration:none;
 }
+button:hover {
+    background: #fff;
+    text-decoration: underline;
+    color: blue;
+}
+#voltar {
+    margin-left: 1vw;
+}
+
