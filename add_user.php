@@ -22,7 +22,7 @@
                     <input type="text" name="username"> <br>
                 </label>
                 <label for="password">Password: <br>
-                    <input type="text" name="password"> <br> <br>
+                    <input type="password" name="password"> <br> <br>
                 </label>
                 <button type="submit">Submit</button> <br> <br>
                 <p style="margin-right: 1.5vw;"><?php $msg = $_GET['msg']; echo $msg;?></p>
