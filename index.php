@@ -13,7 +13,7 @@
             <h1>My App</h1>
             <ul>
                 <li><a href="add_user.php">Add User</a></li>
-                <li><a href="">List of Users</a></li>
+                <li><a href="list_user.php">List of Users</a></li>
                 <li><a href="">Edit Users</a></li>
             </ul>
         </div>
