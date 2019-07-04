@@ -3,11 +3,11 @@
     $email    = $_POST['email'];
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $status   = "A";
+    $status   = 'A';
 
     $link = mysqli_connect("localhost", "root", "gtt123", "curso-db");
     
-    $sql = "INSERT INTO final-project (status,name,email,username,password) VALUES ('$status','$name','$email','$username','$password')";
+    $sql = "INSERT INTO finalproject (name, email, username, password, status) VALUES ('$name','$email','$username','$password','$status')";
 
 
     if (! mysqli_query($link, $sql)){
@@ -16,6 +16,5 @@
     } else {
         echo "inserted";
         $msg =  "inserted";
-        $query = "SELECT * from final-project where 'status'='A'";
     }
     header("Location: add_user.php?msg=$msg");
