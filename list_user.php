@@ -10,7 +10,7 @@
 <body>
     <div class="wrapper">
         <div class="wrapped-div">
-            <a id="voltar" href="index.php">Voltar</a><br><br> <br>
+            <a id="voltar" href="nav.php">Voltar</a><br><br> <br>
             <?php
             include("list_user_2.php");
             ?>

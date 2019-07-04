@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <?php
     $id = $_GET['id'];
-    $con = mysqli_connect("localhost", "root", "gtt123", "curso-db");
+    include_once 'MySQL.class.php';
+    
     $sql = "SELECT id, name, email, username, password, status from finalproject";
     $result = $con-> query($sql);
 

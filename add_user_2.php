@@ -1,16 +1,17 @@
 <?php
+
     $name     = $_POST['name'];
     $email    = $_POST['email'];
     $username = $_POST['username'];
     $password = $_POST['password'];
     $status   = 'A';
 
-    $link = mysqli_connect("localhost", "root", "gtt123", "curso-db");
+    include_once 'MySQL.class.php';
     
     $sql = "INSERT INTO finalproject (name, email, username, password, status) VALUES ('$name','$email','$username','$password','$status')";
 
 
-    if (! mysqli_query($link, $sql)){
+    if (! mysqli_query($con, $sql)){
         echo "not inserted";
         $msg = 'not inserted';
     } else {

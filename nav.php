@@ -10,7 +10,7 @@
 <body>
     <div class="wrapper">
         <div class="wrapped-div">
-            <h1>My App</h1>
+            <h1>my application</h1>
             <ul>
                 <li><a href="add_user.php">Add User</a></li>
                 <li><a href="list_user.php">List of Users</a></li>

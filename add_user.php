@@ -11,7 +11,7 @@
     <div class="wrapper">
         <div class="wrapped-div">
             <form method="post" action="add_user_2.php">
-                <a id="voltar" href="index.php">Voltar</a><br><br> <br>
+                <a id="voltar" href="nav.php">Voltar</a><br><br> <br>
                 <label for="name">Nome: <br>
                     <input type="text" name="name"> <br>
                 </label>

@@ -3,10 +3,8 @@
 $username = $_GET['username'];
 $password = $_GET['password'];
 
-    $con = mysqli_connect("localhost", "root", "gtt123", "curso-db");
-    echo 'ewpowepovwe';
+    include_once 'MySQL.class.php';
     $sql = "SELECT username, password, status from finalproject";
-    echo 'ewpowepovwe';
     $result = $con-> query($sql);
     echo 'ewpowepovwe';
     if ($result-> num_rows > 0){

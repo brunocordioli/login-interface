@@ -8,11 +8,11 @@
     $password = $_POST['password'];
     $status   = 'A';
 
-    $link = mysqli_connect("localhost", "root", "gtt123", "curso-db");
+    include_once 'MySQL.class.php';
    
     $sql = "UPDATE finalproject set name='$name', email='$email', username='$username', password='$password', status='$status' where id = $id;";
 
-    if (! mysqli_query($link, $sql)){
+    if (! mysqli_query($con, $sql)){
         $msg = 'not updated';
     } else {
         $msg =  "updated";
