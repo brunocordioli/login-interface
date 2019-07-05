@@ -1,3 +1,8 @@
+<!--
+ Projected and made by Bruno Cordioli Machado
+ Please access my website "brunocordioli.tk" to know more about me!
+ --> 
+
 <?php
     echo "<table>";
     include_once 'MySQL.class.php';
