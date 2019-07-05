@@ -1,3 +1,8 @@
+<!--
+ Projected and made by Bruno Cordioli Machado
+ Please access my website "brunocordioli.tk" to know more about me!
+ --> 
+
 <?php
 
     $name     = $_POST['name'];
@@ -19,3 +24,5 @@
         $msg =  "inserted";
     }
     header("Location: add_user.php?msg=$msg");
+
+
