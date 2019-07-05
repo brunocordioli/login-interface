@@ -1,3 +1,8 @@
+<!--
+ Projected and made by Bruno Cordioli Machado
+ Please access my website "brunocordioli.tk" to know more about me!
+ --> 
+
 <?php
     $id = $_GET['id'];
 
@@ -18,4 +23,4 @@
         $msg =  "updated";
     }
     
-    header("Location: add_user.php?msg=$msg");
+    header("Location: list_user.php?msg=$msg");
