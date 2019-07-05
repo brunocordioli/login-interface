@@ -1,19 +1,15 @@
+<!--
+ Projected and made by Bruno Cordioli Machado
+ Please access my website "brunocordioli.tk" to know more about me!
+ --> 
+
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My App</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
 <body>
-    <div class="wrapper">
-        <div class="wrapped-div">
-            <a id="voltar" href="nav.php">Voltar</a><br><br> <br>
-            <?php
-            include("list_user_2.php");
-            ?>
+    <?php include("nav.php");?>
+    <div class="wrapper-list">
+        <div class="wrapped-div-list">
+            <?php include("list_user_2.php");?>
         </div>
     </div>
 </body>
