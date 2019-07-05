@@ -1,59 +1,203 @@
-body{
-    font-family: 'Courier New', Courier, monospace;
-}
+/*
+ Projected and made by Bruno Cordioli Machado
+ Please access my website "brunocordioli.tk" to know more about me!
+*/
 
-ul {
-    list-style-type: none;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/*
+Core Styles
+*/
+body {
+    font-family: 'Roboto', sans-serif;
 }
 a {
-    background-color:blue;
-    border:1px solid #660000;
-    border-radius:5px;
-    color:#fff;
-    margin-right:1vw;
-    padding:10px 10px 10px 10px;
-    text-decoration:none;
+    text-decoration: none;
 }
 a:hover {
-    background: #fff;
     text-decoration: underline;
-    color: blue;
 }
-li {
-    padding: 1vw 3vw 1vw 3vw;
-}
+/*
+Core Styles
+*/
+
+
+
+
+
+/* 
+Login Page
+*/
 .wrapper {
+    top: 20vh;
     position: relative;
-    top: 150px;
-    width: 50%;
-    left: 25%;
+    width: 30%;
+    left: 35%;
 }
 .wrapped-div {
-    padding: 3vw;
-    background: lightgrey;
-    border-radius: 1vw;
     position: relative;
-    width: 90%;
-    left: 5%;
-    text-align: center;
+    margin: 0vw 2vw 0vw 2vw;
+    padding: 1vw 2vw 3vw 2vw;
+    background: white;
+    box-shadow: 2px 10px 10px 5px rgba(232,229,232,1);
+}
+#sign-in {
+    padding: 0 0 1vw 0;
+}
+input {
+    width: 100%;
+    padding: 1vw 0 0vw 0;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+}
+input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #4e4efb;;
+}
+.text {
+    margin: 1vw 0vw .2vw 0vw;
 }
 button {
-    background-color:blue;
-    border:1px solid #660000;
-    border-radius:5px;
-    color:#fff;
-    padding:10px 10px 10px 10px;
-    text-decoration:none;
+    margin: 1vw 0 0 0;
+    width: 100%;
+    border: none;
+    padding: 1vw 0 1vw 0;
+    color: white;
+    background: #4e4efb;;
+    font-size: 1rem;
 }
-button:hover {
-    background: #fff;
+.response {
+    text-align: center;
+}
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+      position: absolute;
+      top: 20vh;
+      width: 300px;
+      left: 35%;
+    }
+    .wrapper-list {
+        position: absolute;
+        top: 20vh;
+        width: 800px;
+        left: 10%;
+    }
+}
+/* 
+Login Page
+*/
+
+
+
+
+
+
+/*
+Nav Page
+*/
+.nav-box {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    margin: -9px;
+    padding: .5vw 0vw .5vw 1.2vw;
+    background: #4e4efb;
+}
+h1 {
+    display: inline-block;
+}
+#list {
+    display: inline-block;
+    margin: 0 0 0 5vw;
+}
+li {
+    display: inline-block;
+    margin: 0 1vw 0 0;
+}
+.link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.link:hover {
     text-decoration: underline;
-    color: blue;
 }
-#voltar {
-    margin-right: 1vw;
-}
-tr {
-   line-height: 3vw;
+/*
+Nav Page
+*/
+
+
+
+
+
+/*
+Add User Page
+*/
+#add-content{
+    height: 1000px;
 }
 
+/*
+Add User Page
+*/
+
+
+
+
+
+/*
+List Page
+*/
+
+.div-voltar {
+    text-align: center;
+    padding: 1vw;
+}
+.voltar {
+    text-decoration: none;
+    color: white;
+    background: #4e4efb;
+    padding: .7vw;
+}
+
+.wrapper-list {
+    top: 20vh;
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+.wrapped-div-list {
+    position: relative;
+    margin: 0vw 2vw 0vw 2vw;
+    padding: 1vw 2vw 3vw 2vw;
+    background: white;
+    box-shadow: 2px 10px 10px 5px rgba(232,229,232,1);
+}
+table {
+    padding: 2vw;
+}
+td {
+    padding: 1vw 2vw 1vw 1vw;
+}
+@media only screen and (max-width: 1050px) {
+    .wrapper-list {
+        position: absolute;
+        top: 20vh;
+        width: 800px;
+        left: 10%;
+    }
+}
+/*
+List Page
+*/
+
+
+/*
+Edit User Page
+*/
+
+/*
+Edit User Page
+*/
