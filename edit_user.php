@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<!--
+ Projected and made by Bruno Cordioli Machado
+ Please access my website "brunocordioli.tk" to know more about me!
+ --> 
+
 <?php
     $id = $_GET['id'];
     include_once 'MySQL.class.php';
@@ -23,33 +27,30 @@
     }
     $con-> close();
 ?>
-<html lang="pt-bet">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My App</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<!DOCTYPE html>
+<html lang="pt-br">
 <body>
+    <?php include('nav.php')?>
     <div class="wrapper">
         <div class="wrapped-div">
             <form method="post" action="edit_user_2.php?id=<?php echo "$id"?>">
-                <a id="voltar" href="list_user.php">Voltar</a><br><br> <br>
-                <label for="name">Nome: <br>
-                    <input type="text" name="name" value="<?php echo "$valueName"?>"> <br>
+                <div class="div-voltar">
+                    <a class="voltar" href="list_user.php">Voltar</a><br><br> <br>
+                </div>
+                <label for="name"><p class="text">Nome:</p> 
+                    <input type="text" name="name" value="<?php echo "$valueName"?>">
                 </label>
-                <label for="email">Email: <br>
-                    <input type="text" name="email" value="<?php echo "$valueEmail"?>"> <br>
+                <label for="email"><p class="text">Email:</p>
+                    <input type="text" name="email" value="<?php echo "$valueEmail"?>"> 
                 </label>
-                <label for="username">Username: <br>
-                    <input type="text" name="username" value="<?php echo "$valueUsername"?>"> <br>
+                <label for="username"><p class="text">Username:</p>
+                    <input type="text" name="username" value="<?php echo "$valueUsername"?>">
                 </label>
-                <label for="password">Password: <br>
-                    <input type="password" name="password" value="<?php echo "$valuePassword"?>"> <br> <br>
+                <label for="password"><p class="text">Password:</p>
+                    <input type="text" name="password" value="<?php echo "$valuePassword"?>">
                 </label>
                 <button type="submit">Submit</button> <br> <br>
-                <p style="margin-right: 1.5vw;"><?php $msg = $_GET['msg']; echo $msg;?></p>
+                <p class="response"><?php $msg = $_GET['msg']; echo $msg;?></p>
             </form>
         </div>
     </div>
