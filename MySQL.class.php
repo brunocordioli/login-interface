@@ -1,3 +1,8 @@
+<!--
+ Projected and made by Bruno Cordioli Machado
+ Please access my website "brunocordioli.tk" to know more about me!
+ --> 
+
 <?php
 
     $host = "sql10.freemysqlhosting.net"; 
