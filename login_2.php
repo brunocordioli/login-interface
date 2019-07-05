@@ -1,3 +1,8 @@
+<!--
+ Projected and made by Bruno Cordioli Machado
+ Please access my website "brunocordioli.tk" to know more about me!
+ --> 
+
 <?php
 
 $username = $_GET['username'];
@@ -13,7 +18,7 @@ $password = $_GET['password'];
             $row4 = "username";
             $row5 = "password";
             if ($row[$row4] == $username && $row[$row5] == $password && $row[$row3] == "A"){
-                header("Location: nav.php");
+                header("Location: welcome.php?username=$username");
                 $redirect = false;
                 break;
             } else {
