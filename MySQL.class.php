@@ -1,4 +1,4 @@
-
+﻿
 <?php
     class MySQL {
   	
@@ -11,7 +11,7 @@
         $host  = "localhost";
         $user  = "root";
         $pass  = "";
-        $db    = "curso-db";
+        $db    = "db";
         $table = "phpdb";
         $this->set_table($table);
         
