@@ -4,8 +4,10 @@
  --> 
 
 <?php
+    include("User.class.php");
+    
+    
     $id = $_GET['id'];
-
 
     $name     = $_POST['name'];
     $email    = $_POST['email'];
@@ -13,14 +15,15 @@
     $password = $_POST['password'];
     $status   = 'A';
 
-    include_once 'MySQL.class.php';
+    $user = new User();
+    $user->set_name($name);
+    $user->set_email($email);
+    $user->set_username($username);
+    $user->set_password($password);
+    $user->set_status($status);
+    
+    $msg = $user->edit_user($id);
    
-    $sql = "UPDATE finalproject set name='$name', email='$email', username='$username', password='$password', status='$status' where id = $id;";
-
-    if (! mysqli_query($con, $sql)){
-        $msg = 'not updated';
-    } else {
-        $msg =  "updated";
-    }
+    
     
     header("Location: list_user.php?msg=$msg");

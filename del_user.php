@@ -4,15 +4,12 @@
  --> 
 
 <?php
+include("User.class.php");
+
 $id = $_GET['id'];
-include_once 'MySQL.class.php';
 
-$query = "UPDATE `finalproject` SET status= 'I' WHERE `id` = $id";
+$user = new User();
+$user->del_user($id);
 
-if (! mysqli_query($con, $query)){
-    $msg = 'not deleted';
-} else {
-    $msg =  "deleted";
-}
 header("Location: list_user.php?msg=$msg");
 

@@ -24,7 +24,11 @@
                         <input type="password" name="password"> <br> <br>
                     </label>
                     <button type="submit">Submit</button> <br> <br>
-                    <p class="response"><?php $msg = $_GET['msg']; echo $msg;?></p>
+                    <p class="response">
+                        <?php 
+                        include_once("response.php")
+                        ?>   
+                    </p>
                 </form>
             </div>
         </div>

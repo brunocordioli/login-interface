@@ -5,14 +5,11 @@
 
 
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
 --
--- Estrutura para tabela `finalproject`
+-- Structure for the table `phpdb`
 --
 
-CREATE TABLE `finalproject` (
+CREATE TABLE `phpdb` (
   `id` int(11) NOT NULL,
   `name` varchar(20) NOT NULL,
   `email` varchar(30) NOT NULL,
@@ -22,10 +19,10 @@ CREATE TABLE `finalproject` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-ALTER TABLE `finalproject`
+ALTER TABLE `phpdb`
   ADD PRIMARY KEY (`id`);
 
 
-ALTER TABLE `finalproject`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+ALTER TABLE `phpdb`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 

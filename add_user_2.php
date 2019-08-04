@@ -1,9 +1,9 @@
-<!--
- Projected and made by Bruno Cordioli Machado
- Please access my website "brunocordioli.tk" to know more about me!
- --> 
 
 <?php
+
+    include("User.class.php");
+
+
 
     $name     = $_POST['name'];
     $email    = $_POST['email'];
@@ -11,18 +11,17 @@
     $password = $_POST['password'];
     $status   = 'A';
 
-    include_once 'MySQL.class.php';
+    $user = new User();
     
-    $sql = "INSERT INTO finalproject (name, email, username, password, status) VALUES ('$name','$email','$username','$password','$status')";
-
-
-    if (! mysqli_query($con, $sql)){
-        echo "not inserted";
-        $msg = 'not inserted';
-    } else {
-        echo "inserted";
-        $msg =  "inserted";
-    }
+    $user->set_name($name);
+    $user->set_email($email);
+    $user->set_username($username);
+    $user->set_password($password);
+    $user->set_status($status);
+    
+    $msg = $user->add_user();
+        
+   
     header("Location: add_user.php?msg=$msg");
 
 

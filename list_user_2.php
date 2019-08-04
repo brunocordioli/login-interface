@@ -4,14 +4,18 @@
  --> 
 
 <?php
+
     echo "<table>";
-    include_once 'MySQL.class.php';
-    $sql = "SELECT id, name, email, username, status from finalproject";
-    $result = $con-> query($sql);
+    include("User.class.php");
+    $user = new User();
+    $table = $user->get_table();
+    $query = "SELECT id, name, email, username, status from $table";
+    $con = $user->get_connection();
+    $result = $con-> query($query);
 
     if ($result-> num_rows > 0){
         echo "<tr><td>". "ID" ."</td><td>". "NAME". "</td><td>". 
-             "EMAIL"."</td><td>". "</td><td>". "USERNAME"."</td><td>"; 
+             "EMAIL"."</td><td>". "</td><td>". "USERNAME"."</td><td>";
         while($row = $result-> fetch_assoc()){
             $row1 = "id";
             $row2 = "name";
@@ -29,4 +33,3 @@
         echo "0 result";
     }
     $con-> close();
-?>

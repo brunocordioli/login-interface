@@ -5,9 +5,11 @@
 
 <?php
     $id = $_GET['id'];
-    include_once 'MySQL.class.php';
-    
-    $sql = "SELECT id, name, email, username, password, status from finalproject";
+    include("User.class.php");
+    $user = new User();
+    $table = $user->get_table();
+    $sql = "SELECT id, name, email, username, password, status from $table";
+    $con = $user->get_connection();
     $result = $con-> query($sql);
 
     if ($result-> num_rows > 0){
@@ -50,7 +52,7 @@
                     <input type="text" name="password" value="<?php echo "$valuePassword"?>">
                 </label>
                 <button type="submit">Submit</button> <br> <br>
-                <p class="response"><?php $msg = $_GET['msg']; echo $msg;?></p>
+                <p class="response"><?php include_once("response.php")?></p>
             </form>
         </div>
     </div>
