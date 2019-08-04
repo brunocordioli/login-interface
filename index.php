@@ -25,6 +25,7 @@
                         <input type="password" name="password"> <br> <br>
                     </label>
                     <button type="submit">Sign In</button> <br> <br>
+                    <a href="create_account.php">Create account</a>
                     <p id="response"><?php include_once("response.php")?></p>
                 </form>
             </div>
