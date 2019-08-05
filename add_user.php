@@ -2,7 +2,9 @@
  Projected and made by Bruno Cordioli Machado
  Please access my website "brunocordioli.tk" to know more about me!
  --> 
-
+<?php 
+$user = $_GET['username'];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <body>
@@ -10,7 +12,7 @@
     <div id="add-content">
         <div class="wrapper">
             <div class="wrapped-div">
-                <form method="post" action="add_user_2.php">
+                <form method="post" action="add_user_2.php?username=<?php echo "$User"?>">
                     <label for="name"><p class="text">Nome:</p>
                         <input type="text" name="name"> <br>
                     </label>

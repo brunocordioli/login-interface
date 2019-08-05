@@ -5,11 +5,11 @@
 
 <?php
 include("model/User.class.php");
-
+include_once('pattern/nav.php');
 $id = $_GET['id'];
 
 $user = new User();
 $user->del_user($id);
 
-header("Location: list_user.php?msg=$msg");
+header("Location: list_user.php?msg=$msg&username=$User");
 

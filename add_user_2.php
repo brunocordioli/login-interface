@@ -2,7 +2,7 @@
 <?php
 
     include("model/User.class.php");
-
+    include_once('pattern/nav.php');
 
     $name     = $_POST['name'];
     $email    = $_POST['email'];
@@ -18,6 +18,6 @@
     $user->set_status($status);
     $msg = $user->add_user();
     
-    header("Location: add_user.php?msg=$msg");
+    header("Location: add_user.php?msg=$msg&username=$User");
 
 

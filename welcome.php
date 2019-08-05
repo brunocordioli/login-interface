@@ -4,7 +4,7 @@
  --> 
 
 <?php 
-$user = $_GET['username'];
+$User = $_GET['username'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@ $user = $_GET['username'];
     <div class="wrapper">
         <div class="wrapped-div">
             <div class="response">
-                <h1>Welcome <?php  echo "$user";?> =)</h1>
+                <h1>Welcome <?php  echo "$User";?> =)</h1>
             </div>
         </div>
     </div>

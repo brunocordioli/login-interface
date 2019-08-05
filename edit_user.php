@@ -35,9 +35,9 @@
     <?php include('pattern/nav.php')?>
     <div class="wrapper">
         <div class="wrapped-div">
-            <form method="post" action="edit_user_2.php?id=<?php echo "$id"?>">
+            <form method="post" action="edit_user_2.php?id=<?php echo "$id&username=$User"?>">
                 <div class="div-voltar">
-                    <a class="voltar" href="list_user.php">Voltar</a><br><br> <br>
+                    <a class="voltar" href="list_user.php?username=<?php echo "$User" ?>">Voltar</a><br><br> <br>
                 </div>
                 <label for="name"><p class="text">Nome:</p> 
                     <input type="text" name="name" value="<?php echo "$valueName"?>">
