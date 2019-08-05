@@ -1,7 +1,7 @@
 <?php
 
 
-    include("User.class.php");
+    include("model/User.class.php");
 
 
 
@@ -19,8 +19,9 @@
     $user->set_password($password);
     $user->set_status($status);
     
-    $msg1 = $user->add_user();
-    $msg = "created";
-   
-    header("Location: index.php?msg=$msg");
+    $msg = $user->add_user();
+    if ($msg === "inserted") {
+        $msg = "created";
+    }
+    header("Location: create_account.php?msg=$msg");
 

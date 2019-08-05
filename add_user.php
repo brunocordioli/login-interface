@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <body>
-    <?php include_once('nav.php')?>
+    <?php include_once('pattern/nav.php')?>
     <div id="add-content">
         <div class="wrapper">
             <div class="wrapped-div">
@@ -26,7 +26,7 @@
                     <button type="submit">Submit</button> <br> <br>
                     <p class="response">
                         <?php 
-                        include_once("response.php")
+                        include_once("pattern/response.php")
                         ?>   
                     </p>
                 </form>

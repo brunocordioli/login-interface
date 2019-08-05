@@ -10,7 +10,7 @@
         
         $host  = "localhost";
         $user  = "root";
-        $pass  = "";
+        $pass  = "gtt123";
         $db    = "db";
         $table = "phpdb";
         $this->set_table($table);

@@ -16,7 +16,7 @@
     <div class="content">
         <div class="wrapper">
             <div class="wrapped-div">
-                <form method="get" action="login_2.php">
+                <form method="get" action="index_2.php">
                     <h1 id="sign-in">Sign In</h1>
                     <label for="username"><p class="text">Username:</p> 
                         <input id="input" type="text" name="username"> <br>
@@ -26,7 +26,7 @@
                     </label>
                     <button type="submit">Sign In</button> <br> <br>
                     <a href="create_account.php">Create account</a>
-                    <p id="response"><?php include_once("response.php")?></p>
+                    <p id="response"><?php include_once("pattern/response.php")?></p>
                 </form>
             </div>
         </div>

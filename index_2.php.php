@@ -5,7 +5,7 @@
 
 <?php
 
-include("User.class.php");
+include("model/User.class.php");
 
 $username = $_GET['username'];
 $password = $_GET['password'];

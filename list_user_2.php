@@ -6,7 +6,7 @@
 <?php
 
     echo "<table>";
-    include("User.class.php");
+    include("model/User.class.php");
     $user = new User();
     $table = $user->get_table();
     $query = "SELECT id, name, email, username, status from $table";

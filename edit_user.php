@@ -5,7 +5,7 @@
 
 <?php
     $id = $_GET['id'];
-    include("User.class.php");
+    include("model/User.class.php");
     $user = new User();
     $table = $user->get_table();
     $sql = "SELECT id, name, email, username, password, status from $table";
@@ -32,7 +32,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <body>
-    <?php include('nav.php')?>
+    <?php include('pattern/nav.php')?>
     <div class="wrapper">
         <div class="wrapped-div">
             <form method="post" action="edit_user_2.php?id=<?php echo "$id"?>">
@@ -52,7 +52,7 @@
                     <input type="text" name="password" value="<?php echo "$valuePassword"?>">
                 </label>
                 <button type="submit">Submit</button> <br> <br>
-                <p class="response"><?php include_once("response.php")?></p>
+                <p class="response"><?php include_once("pattern/response.php")?></p>
             </form>
         </div>
     </div>

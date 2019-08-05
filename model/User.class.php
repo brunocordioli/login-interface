@@ -1,7 +1,7 @@
 <?php
 
 include("MySQL.class.php");
-
+include("service/ValidatorService.class.php");
 class User{
     
     
@@ -73,17 +73,21 @@ class User{
     }
     
     public function add_user(){
+        $validator = new ValidatorService();
         $table = $this->get_table();              
         $query = "INSERT INTO $table (name, email,username,password,status) VALUES ('$this->name','$this->email', '$this->username', '$this->password','$this->status');";          
         $con = $this->get_connection();
-        if ($con->query($query) === TRUE) {
-            echo "New record created successfully";
+        if ($validator->validator($this->get_username(), $this->get_password(), $this->get_name(), $this->get_email())) { 
+            if ($con->query($query) === TRUE) {
+                echo "New record created successfully";
+            } else {
+                echo "Error: " . $query . "<br>" . $con->error;
+            }
+            $con->close();
+            return "inserted";
         } else {
-            echo "Error: " . $query . "<br>" . $con->error;
+            return "not valid";
         }
-        $con->close();
-        
-        return "inserted";
     }
     public function get_user(string $username, string $password){
         $table = $this->get_table();

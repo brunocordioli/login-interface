@@ -4,7 +4,7 @@
  --> 
 
 <?php
-    include("User.class.php");
+    include("model/User.class.php");
     
     
     $id = $_GET['id'];
