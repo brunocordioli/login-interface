@@ -2,7 +2,7 @@
  Projected and made by Bruno Cordioli Machado
  Please access my website "brunocordioli.tk" to know more about me!
  --> 
-
+<?php include('pattern/nav.php')?>
 <?php
     $id = $_GET['id'];
     include("model/User.class.php");
@@ -32,7 +32,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <body>
-    <?php include('pattern/nav.php')?>
     <div class="wrapper">
         <div class="wrapped-div">
             <form method="post" action="edit_user_2.php?id=<?php echo "$id&username=$User"?>">
