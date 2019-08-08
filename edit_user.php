@@ -2,7 +2,7 @@
  Projected and made by Bruno Cordioli Machado
  Please access my website "brunocordioli.tk" to know more about me!
  --> 
-<?php include('pattern/nav.php')?>
+<?php include('template/nav.php')?>
 <?php
     $id = $_GET['id'];
     include("model/User.class.php");
@@ -51,7 +51,7 @@
                     <input type="text" name="password" value="<?php echo "$valuePassword"?>">
                 </label>
                 <button type="submit">Submit</button> <br> <br>
-                <p class="response"><?php include_once("pattern/response.php")?></p>
+                <p class="response"><?php include_once("template/response.php")?></p>
             </form>
         </div>
     </div>

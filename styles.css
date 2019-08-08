@@ -14,9 +14,7 @@ body {
 a {
     text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
-}
+
 /*
 Core Styles
 */
@@ -123,6 +121,14 @@ li {
 }
 .link:hover {
     text-decoration: underline;
+}
+.title-app {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.title:hover {
+    text-decoration: none;
 }
 /*
 Nav Page

@@ -25,7 +25,7 @@
                 echo "<tr><td>". $row[$row1] ."</td><td>". $row[$row2]. "</td><td>". 
                 $row[$row3]."</td><td>". "</td><td>". $row[$row4]."</td><td>". "</td><td>".
                 "<a href='edit_user.php?id=$row[$row1]&username=$User'>Edit User</a>". "</td><td>".
-                "<a href='del_user.php?id=$row[$row1]'>Apagar</a>". "</td></tr>";  
+                "<a href='del_user.php?id=$row[$row1]&username=$User'>Apagar</a>". "</td></tr>";  
             }
         }
         echo "</table>";

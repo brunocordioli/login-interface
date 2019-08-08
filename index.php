@@ -27,7 +27,7 @@
                     <button type="submit">Sign In</button> <br> <br>
                     <a href="create_account.php">Create account</a><br>
                     <a href="forgot_password.php">Forgot password</a>
-                    <p id="response"><?php include_once("pattern/response.php")?></p>
+                    <p id="response"><?php include_once("template/response.php")?></p>
                 </form>
             </div>
         </div>

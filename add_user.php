@@ -8,7 +8,7 @@ $user = $_GET['username'];
 <!DOCTYPE html>
 <html lang="pt-br">
 <body>
-    <?php include_once('pattern/nav.php')?>
+    <?php include_once('template/nav.php')?>
     <div id="add-content">
         <div class="wrapper">
             <div class="wrapped-div">
@@ -28,7 +28,7 @@ $user = $_GET['username'];
                     <button type="submit">Submit</button> <br> <br>
                     <p class="response">
                         <?php 
-                        include_once("pattern/response.php")
+                        include_once("template/response.php")
                         ?>   
                     </p>
                 </form>

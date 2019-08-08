@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <body>
-    <?php include("pattern/nav.php");?>
+    <?php include("template/nav.php");?>
     <div class="wrapper-list">
         <div class="wrapped-div-list">
             <?php include("list_user_2.php");?>

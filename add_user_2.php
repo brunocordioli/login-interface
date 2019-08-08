@@ -2,7 +2,7 @@
 <?php
 
     include("model/User.class.php");
-    include_once('pattern/nav.php');
+    include_once('template/nav.php');
 
     $name     = $_POST['name'];
     $email    = $_POST['email'];

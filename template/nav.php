@@ -17,7 +17,7 @@ $User = $_GET['username'];
 <body>
     <div class="nav-box">
         <div class="nav-boxed">
-            <h1>MY APP</h1>
+            <h1><a class="title-app" href="welcome.php?<?php echo "username=$User" ?>">MY APP</a></h1>
             <div id="list">
                 <ul>
                     <li><a class="link" href="add_user.php?<?php echo "username=$User" ?>">ADD USER</a></li>

@@ -9,7 +9,7 @@ $User = $_GET['username'];
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    <?php include('pattern/nav.php')?>
+    <?php include('template/nav.php')?>
     <div class="wrapper">
         <div class="wrapped-div">
             <div class="response">

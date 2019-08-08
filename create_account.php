@@ -29,7 +29,7 @@
                     <button type="submit">Submit</button> <br> <br>
                     <p class="response">
                         <?php 
-                        include_once("pattern/response.php")
+                        include_once("template/response.php")
                         ?>   
                     </p>
                 </form>
